@@ -1,0 +1,89 @@
+.fxSwipe .navOutNext {
+	-webkit-animation: decreaseHeight 0.8s forwards ease-in-out;
+	animation: decreaseHeight 0.8s forwards ease-in-out;
+}
+
+.fxSwipe .navInNext {
+	-webkit-animation: show 0.8s forwards ease-in-out;
+	animation: show 0.8s forwards ease-in-out;
+}
+
+.fxSwipe .navOutPrev {
+	-webkit-animation: hide 0.8s forwards ease-in-out;
+	animation: hide 0.8s forwards ease-in-out;
+}
+
+.fxSwipe .navInPrev {
+	z-index: 1001;
+	opacity: 1;
+	-webkit-animation: increaseHeight 0.8s forwards ease-in-out;
+	animation: increaseHeight 0.8s forwards ease-in-out;
+}
+
+@-webkit-keyframes decreaseHeight {
+	from {} /* Fixes Chrome issue 35.0.1916.114 (easing breaks) */
+	to {
+		height: 0;
+	}
+}
+
+@keyframes decreaseHeight {
+	from {} /* Fixes Chrome issue 35.0.1916.114 (easing breaks) */
+	to {
+		height: 0;
+	}
+}
+
+@-webkit-keyframes show {
+	0% {
+		opacity: 0;
+	}
+	1%,100% {
+		opacity: 1;
+	}
+}
+
+@keyframes show {
+	0% {
+		opacity: 0;
+	}
+	1%,100% {
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes hide {
+	0%,99% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes hide {
+	0%,99% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+
+@-webkit-keyframes increaseHeight {
+	from {
+		height: 0;
+	}
+	to {
+		height: 100%;
+	}
+}
+
+@keyframes increaseHeight {
+	from {
+		height: 0;
+	}
+	to {
+		height: 100%;
+	}
+}
