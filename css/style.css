@@ -46,7 +46,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.container {
+.navcontainer {
   width: 80%;
   margin: 0 auto;
 }
@@ -115,7 +115,7 @@ header .nav a {
   transition: .3s ease;
 }
 header .nav a:hover {
-  background: #FFF;
+  background: #3498DB;
   color: #34495E;
 }
 .fixed-header header .nav a {
@@ -168,7 +168,7 @@ header .nav a:hover {
   margin: 0 4px;
 }
 
-section .container {
+section .navcontainer {
   max-width: 80%;
 }
 section h2 {
@@ -197,7 +197,6 @@ section p {
   margin-left: 10%;
   margin-right: 10%;
   box-sizing: border-box;
-  text-align: center;
   color: rgba(0, 0, 0, 0);
 }
 .hero h1 {
@@ -382,21 +381,22 @@ table{
   border-radius: 2px;
 }
 .cardboard{
-  height:2000px;
   background-color: rgba(255, 255, 255, 0.7);
 }
 .newscard{
-  height:30px;
-  margin-left: 5px;
-  margin-right: 5px;
+  height:50px;
+  margin:2px;
+  border-radius: 15px;
 }
 .newscardboard{
-  height:300px;
-  margin-top: 60px;
+  margin: 0;
+  height:500px;
+  overflow: auto;
 }
 .actcardboard{
-  height:300px;
-  margin-top: 60px;
+  margin: 0;
+  height:500px;
+  overflow: auto;
 }
 .z-depth-0 {
   box-shadow: none !important;
@@ -425,11 +425,28 @@ table{
 .z-depth-5 {
   box-shadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.3);
 }
+.z-depth-h {
+  box-shadow: 0 -3px 2px 0px rgba(0, 0, 0, 0.14),0 3px 2px 0px rgba(0, 0, 0, 0.14);
+}
 
 
 /**
 *颜色
 */
+.white{
+  background-color: #FFFFFF !important;
+}
+
+.white-text{
+  color: #FFFFFF !important;
+}
+.black{
+  background-color: #000000 !important;
+}
+
+.black-text{
+  color: #000000 !important;
+}
 .red{
   background-color: #FF2D48 !important;
 }
@@ -461,6 +478,13 @@ table{
 .sky-text{
   color: #02B1D3 !important;
 }
+.green {
+  background-color: #43a047 !important;
+}
+
+.green-text{
+  color: #43a047 !important;
+}
 
 .blue {
   background-color: #4C4FD8 !important;
@@ -475,6 +499,13 @@ table{
 
 .blue-grey-text{
   color: #292B4A !important;
+}
+.grey{
+  background-color: #9e9e9e !important;
+}
+
+.grey-text{
+  color: #9e9e9e !important;
 }
 
 .row {
@@ -492,7 +523,7 @@ table{
 .row .col {
   float: left;
   box-sizing: border-box;
-  padding: 0 0.75rem;
+  padding: 0 0.0rem;
   min-height: 1px;
 }
 
