@@ -3411,6 +3411,13 @@ nav ul a span.badge {
   right: auto;
 }
 
+.row .col.s1large {
+  width: 14.27%;
+  margin-left: auto;
+  left: auto;
+  right: auto;
+}
+
 .row .col.s2 {
   width: 16.6666666667%;
   margin-left: auto;
