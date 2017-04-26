@@ -168,6 +168,7 @@
 <script src="js/index.js"></script>
 
 <script src="js/materialize.min.js"></script>
+
 <script>
   var canvas = document.getElementById("canvas");
   var ctx = canvas.getContext("2d");
@@ -322,6 +323,10 @@
 
 <script>
   $('.carousel.carousel-slider').carousel({fullWidth: true});
+  function round(){
+  $('.carousel.carousel-slider').carousel('next', 1);
+  }
+  var t2 = window.setInterval("round()",5000); 
 </script>
 <div class="footer">
   <div class="container">
