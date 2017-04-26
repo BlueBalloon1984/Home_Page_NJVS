@@ -203,13 +203,6 @@ section h5 {
   font-weight: 400;
   text-transform: capitalize;
 }
-.hero p {
-  max-width: 760px;
-  margin: 0 auto 48px;
-  padding: 0 48px;
-  box-sizing: border-box;
-  color: inherit;
-}
 
 .showcase {
   padding: 200px 0 48px;
