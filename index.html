@@ -8,50 +8,49 @@
   <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css'>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/pageSwitch.min.css">
-    <style>
-
-canvas {
-  position:fixed;
-  background-color: #eee;
-  display: block;
-  margin: 0 auto;
-  z-index: -1;
-}
-	#roundcontainer {
-			width: 100%;
-			height: 500px;
-			overflow: hidden;
-	}
-	.roundsections,.roundsection {
-		height:100%;
-	}
-	#roundcontainer,.roundsections {
-		position: relative;
-	}
-	.roundsection {
-		background-color: #000;
-		background-size: cover;
-		background-position: 40% 50%;
-		text-align: left;
-		color: black;
-	}
-	#section0 {
-		background-image: url('img/6.jpg');
-	}
-	#section1 {
-		background-image: url('img/7.jpg');
-	}
-	#section2 {
-		background-image: url('img/8.jpg');
-	}
-	#section3 {
-		background-image: url('img/4.jpg');
-	}
-	h3{
-	margin-top:380px;
-	margin-left:80px;
-	font-size:50px;
-	}
+  <style>
+    canvas {
+      position:fixed;
+      background-color: #eee;
+      display: block;
+      margin: 0 auto;
+      z-index: -1;
+    }
+    	#roundcontainer {
+    			width: 100%;
+    			height: 500px;
+    			overflow: hidden;
+    	}
+    	.roundsections,.roundsection {
+    		height:100%;
+    	}
+    	#roundcontainer,.roundsections {
+    		position: relative;
+    	}
+    	.roundsection {
+    		background-color: #000;
+    		background-size: cover;
+    		background-position: 40% 50%;
+    		text-align: left;
+    		color: black;
+    	}
+    	#section0 {
+    		background-image: url('img/6.jpg');
+    	}
+    	#section1 {
+    		background-image: url('img/7.jpg');
+    	}
+    	#section2 {
+    		background-image: url('img/8.jpg');
+    	}
+    	#section3 {
+    		background-image: url('img/4.jpg');
+    	}
+    	h3{
+    	margin-top:380px;
+    	margin-left:80px;
+    	font-size:50px;
+    	}
     </style>
 </head>
 
@@ -59,7 +58,7 @@ canvas {
 <canvas id="canvas"></canvas>
 <header>
   <div class="container">
-    <div class="row">
+    <div class="headrow">
       <div class="column">
         <div class="logo">
           <div class="icon"></div>
@@ -88,9 +87,18 @@ canvas {
         <div class="roundsection" id="section3"><h3><a href="www.baidu.com">this is the page1</a></h3></div>
       </div>
     </div>
+
+    <div class="row">
+      <div class="newscardboard red col s8" style="height:300px">
+        <div class="newscard blue" >
+
+        </div>
+      </div>
+      <div class="actcardboard blue col s4">
+
+      </div>
+    </div>
   </div>
-
-
 </section>
 
 
@@ -129,7 +137,7 @@ canvas {
     this.vb = randomIntFromInterval(25, 100) / 100;
 
     this.draw = function() {
-	   
+
       ctx.strokeStyle = "#02B1D3";
       ctx.beginPath();
       ctx.moveTo(this.a.x, this.a.y);
