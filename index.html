@@ -45,14 +45,13 @@
 
 <section class="hero">
   <div class="cardboard z-depth-3">
-    <div class="carousel carousel-slider center" data-indicators="true">
-      <div class="carousel-fixed-item center">
-        <a class="btn waves-effect white grey-text darken-text-2">button</a>
-      </div>
-      <div class="carousel-item red white-text" href="#one!">
-        <h2>First Panel</h2>
-        <p class="white-text">This is your first panel</p>
-      </div>
+    <!-- <div class="carousel carousel-slider" style="height:50">
+      <a class="carousel-item" href="#one!"><img src="img/1.jpg"></a>
+      <a class="carousel-item" href="#two!"><img src="img/2.jpg"></a>
+      <a class="carousel-item" href="#three!"><img src="img/3.jpg"></a>
+      <a class="carousel-item" href="#four!"><img src="img/4.jpg"></a>
+    </div> -->
+    <!-- <div class="carousel carousel-slider center" data-indicators="true">
       <div class="carousel-item amber white-text" href="#two!">
         <h2>Second Panel</h2>
         <p class="white-text">This is your second panel</p>
@@ -65,6 +64,38 @@
         <h2>Fourth Panel</h2>
         <p class="white-text">This is your fourth panel</p>
       </div>
+    </div> -->
+    <div class="slider">
+      <ul class="slides">
+        <li>
+          <a href="www.baidu.com"><img src="img/1.jpg"></a><!-- random image -->
+          <div class="caption center-align">
+            <h3 class="black-text">我是第一个大标题！！</h3>
+            <h5 class="black-text">我是第一个大大的小跟班</h5>
+          </div>
+        </li>
+        <li>
+          <a href="www.baidu.com"><img src="img/2.jpg"></a> <!-- random image -->
+          <div class="caption left-align">
+            <h3 class="black-text">我是第二个大标题！！第一个是SB</h3>
+            <h5 class="black-text">顶楼上的！！</h5>
+          </div>
+        </li>
+        <li>
+          <a href="www.baidu.com"><img src="img/3.jpg"></a> <!-- random image -->
+          <div class="caption right-align">
+            <h3 class="black-text">隔壁都是傻逼！！</h3>
+            <h5 class="black-text">沙发~~</h5>
+          </div>
+        </li>
+        <li>
+          <a href="www.baidu.com"><img src="img/4.jpg"></a> <!-- random image -->
+          <div class="caption center-align">
+            <h3 class="black-text">我招谁惹谁了我</h3>
+            <h5 class="black-text">啊？~</h5>
+          </div>
+        </li>
+      </ul>
     </div>
     <div class="row" style="margin:5px;">
       <div class="col s8" style="padding:0px;">
@@ -287,11 +318,10 @@
 </script>
 
 <script>
-  $('.carousel.carousel-slider').carousel({fullWidth: true});
-  function round(){
-  $('.carousel.carousel-slider').carousel('next', 1);
-  }
-  var t2 = window.setInterval("round()",5000);
+$(document).ready(function(){
+  $('.slider').slider({full_width: true});
+});
+
 </script>
 
 <div class="footer">
