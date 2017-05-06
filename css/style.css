@@ -470,3 +470,78 @@ table{
 .grey-text{
   color: #9e9e9e !important;
 }
+
+
+.RoundAct{
+  z-index: 4;
+  height:150px;
+  width:150px;
+  margin:0 auto;
+  position: relative;
+  border-radius:100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 150px;
+  border: 5px solid #2196F3;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: 0px,0px;
+  background-color: #515816;
+}
+
+.contentLog{
+  z-index: 3;
+  position: absolute;
+  width: 450px;
+  height: 400px;
+  left:50%;
+  top:320px;
+  margin-left:-225px;  /*设置为宽度的一半*/
+  border-radius:60px;
+}
+
+.InnerFormLogin{
+  height:70%;
+  margin-left:10%;
+  margin-right:10%;
+  margin-top:20%;
+  margin-bottom:20%
+}
+
+.loginUser{
+  margin-top:20%;
+  font-size:20px;
+}
+
+.loginMID{
+  margin-top:5%;
+  font-size:20px;
+}
+
+.inputLogin{
+  padding-left:10px;
+  height:15%;
+  border-radius:10px;
+}
+
+.aLogin{
+  height:15%;
+  margin-top:10%;
+  border-radius:10px;
+  width:50%;
+  margin-left:25%;
+  margin-right:25%;
+}
+
+.pLogin{
+  margin:0;
+  text-align: center;
+}
+
+.InnerFormLogin{
+  height:70%;
+  margin-left:10%;
+  margin-right:10%;
+  margin-top:20%;
+  margin-bottom:20%
+}
