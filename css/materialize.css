@@ -5669,23 +5669,22 @@ button.btn-floating {
 
 .chip {
   display: inline-block;
-  height: 32px;
-  font-size: 13px;
-  font-weight: 500;
-  color: rgba(0, 0, 0, 0.6);
-  line-height: 32px;
+  height: 80px;
+  font-size: 25px;
+  font-weight: 300;
+  color: rgb(0, 0, 0);
+  line-height: 82px;
   padding: 0 12px;
-  border-radius: 16px;
+  border-radius: 80px;
   background-color: #e4e4e4;
-  margin-bottom: 5px;
-  margin-right: 5px;
+  margin: 5px;
 }
 
 .chip > img {
   float: left;
   margin: 0 8px 0 -12px;
-  height: 32px;
-  width: 32px;
+  height: 80px;
+  width: 80px;
   border-radius: 50%;
 }
 
@@ -7281,7 +7280,8 @@ input[type=range]:focus::-ms-fill-upper {
  */
 .preloader-wrapper {
   display: inline-block;
-  position: relative;
+  position: absolute;
+  left: 500px;
   width: 50px;
   height: 50px;
 }
@@ -7292,14 +7292,14 @@ input[type=range]:focus::-ms-fill-upper {
 }
 
 .preloader-wrapper.big {
-  width: 64px;
-  height: 64px;
+  width: 208px;
+  height: 208px;
 }
 
 .preloader-wrapper.active {
   /* duration: 360 * ARCTIME / (ARCSTARTROT + (360-ARCSIZE)) */
-  -webkit-animation: container-rotate 1568ms linear infinite;
-  animation: container-rotate 1568ms linear infinite;
+  -webkit-animation: container-rotate 10568ms linear infinite;
+  animation: container-rotate 10568ms linear infinite;
 }
 
 @-webkit-keyframes container-rotate {

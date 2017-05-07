@@ -363,7 +363,7 @@ table{
   border: 2px solid black;
   cellpadding: 200px;
 }
-.card,.cardboard,.newscard，.newscardboard,.actcardboard,.timeboard{
+.card,.cardboard,.newscard，.newscardboard,.actcardboard,.timeboard,.timesboard{
   position: relative;
   margin: 0.5rem 0 1rem 0;
   background-color: #fff;
@@ -376,8 +376,11 @@ table{
 .timeboard{
   width: 200px;
   height: 200px;
+  position: absolute;
+  left: 500px;
   background-color: rgba(255, 255, 255);
   border-radius: 100%;
+  margin: 4px;
 }
 .newscard{
   height:50px;
@@ -388,6 +391,20 @@ table{
   margin: 0;
   height:500px;
   overflow: auto;
+}
+.timesum{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  margin-left: -5px;
+  margin-top: -24px;
+}
+.hoursum{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  margin-left: -65px;
+  margin-top: -24px;
 }
 .actcardboard{
   margin: 0;
