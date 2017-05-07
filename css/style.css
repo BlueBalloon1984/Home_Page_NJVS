@@ -363,7 +363,7 @@ table{
   border: 2px solid black;
   cellpadding: 200px;
 }
-.card,.cardnoard,.newscard，.newscardboard,.actcardboard{
+.card,.cardboard,.newscard，.newscardboard,.actcardboard{
   position: relative;
   margin: 0.5rem 0 1rem 0;
   background-color: #fff;
@@ -665,3 +665,7 @@ table{
 }
 
 /* Example media queries */
+.detail-sec{
+  margin-left:240px;
+  padding:50px;
+}
