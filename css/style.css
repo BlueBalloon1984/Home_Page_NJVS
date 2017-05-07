@@ -363,7 +363,7 @@ table{
   border: 2px solid black;
   cellpadding: 200px;
 }
-.card,.cardboard,.newscard，.newscardboard,.actcardboard{
+.card,.cardboard,.newscard，.newscardboard,.actcardboard,.timeboard{
   position: relative;
   margin: 0.5rem 0 1rem 0;
   background-color: #fff;
@@ -372,6 +372,12 @@ table{
 }
 .cardboard{
   background-color: rgba(255, 255, 255, 0.7);
+}
+.timeboard{
+  width: 200px;
+  height: 200px;
+  background-color: rgba(255, 255, 255);
+  border-radius: 100%;
 }
 .newscard{
   height:50px;
