@@ -4752,7 +4752,7 @@ small {
 }
 
 .card.horizontal.small .card-image, .card.horizontal.medium .card-image, .card.horizontal.large .card-image {
-  height: 100%;
+  height: 100%;;
   max-height: none;
   overflow: visible;
 }
@@ -4762,13 +4762,15 @@ small {
 }
 
 .card.horizontal .card-image {
-  max-width: 50%;
+  width: 400px;
+  height: 300px;
 }
 
 .card.horizontal .card-image img {
-  border-radius: 2px 0 0 2px;
-  max-width: 100%;
-  width: auto;
+  /*border-radius: 2px 0 0 2px;*/
+  width: 100%;
+  height: 100%;
+  objec-fit: cover;
 }
 
 .card.horizontal .card-stacked {
