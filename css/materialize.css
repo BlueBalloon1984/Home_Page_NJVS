@@ -5818,21 +5818,21 @@ label {
    ========================================================================== */
 /* Style Placeholders */
 ::-webkit-input-placeholder {
-  color: #d1d1d1;
+  color: #000000;
 }
 
 :-moz-placeholder {
   /* Firefox 18- */
-  color: #d1d1d1;
+  color: #000000;
 }
 
 ::-moz-placeholder {
   /* Firefox 19+ */
-  color: #d1d1d1;
+  color: #000000;
 }
 
 :-ms-input-placeholder {
-  color: #d1d1d1;
+  color: #000000;
 }
 
 /* Text inputs */
@@ -5889,8 +5889,8 @@ input[type=search]:disabled,
 input[type=search][readonly="readonly"],
 textarea.materialize-textarea:disabled,
 textarea.materialize-textarea[readonly="readonly"] {
-  color: rgba(0, 0, 0, 0.26);
-  border-bottom: 1px dotted rgba(0, 0, 0, 0.26);
+  color: rgba(0, 0, 0, 1);
+  border-bottom: 1px dotted rgba(0, 0, 0, 1);
 }
 
 input:not([type]):disabled + label,
@@ -5919,7 +5919,7 @@ input[type=search]:disabled + label,
 input[type=search][readonly="readonly"] + label,
 textarea.materialize-textarea:disabled + label,
 textarea.materialize-textarea[readonly="readonly"] + label {
-  color: rgba(0, 0, 0, 0.26);
+  color: rgba(0, 0, 0, 1);
 }
 
 input:not([type]):focus:not([readonly]),
@@ -6341,7 +6341,7 @@ form p:last-child {
 
 [type="checkbox"]:not(:checked):disabled + label:before {
   border: none;
-  background-color: rgba(0, 0, 0, 0.26);
+  background-color: rgba(0, 0, 0, 1);
 }
 
 [type="checkbox"].tabbed:focus + label:after {
@@ -6371,8 +6371,8 @@ form p:last-child {
 }
 
 [type="checkbox"]:checked:disabled + label:before {
-  border-right: 2px solid rgba(0, 0, 0, 0.26);
-  border-bottom: 2px solid rgba(0, 0, 0, 0.26);
+  border-right: 2px solid rgba(0, 0, 0, 1);
+  border-bottom: 2px solid rgba(0, 0, 0, 1);
 }
 
 /* Indeterminate checkbox */
@@ -6394,7 +6394,7 @@ form p:last-child {
 }
 
 [type="checkbox"]:indeterminate:disabled + label:before {
-  border-right: 2px solid rgba(0, 0, 0, 0.26);
+  border-right: 2px solid rgba(0, 0, 0, 1);
   background-color: transparent;
 }
 
@@ -6620,7 +6620,7 @@ select {
 }
 
 .select-wrapper span.caret.disabled {
-  color: rgba(0, 0, 0, 0.26);
+  color: rgba(0, 0, 0, 1);
 }
 
 .select-wrapper + label {

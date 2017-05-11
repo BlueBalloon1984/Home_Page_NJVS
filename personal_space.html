@@ -5,6 +5,7 @@
     <title>个人中心</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/materialize.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <style>
       canvas {
         position:fixed;
@@ -118,19 +119,19 @@
         <div id="test4" class="detail-sec">
 
 
-          <div class="cardboard">
-            <div class="row" style="padding:10px;">
+          <div class="cardboard black-text">
+            <div class="row" style="padding:10px;position:relative;">
               <div class="col s6">
                 <div class="input-field">
-                  <input id="first_name" type="text" class="validate">
+                  <input value="李子琛" id="first_name" type="text" disabled="disabled" class="validate">
                   <label for="name">姓名</label>
                 </div>
                 <div class="input-field">
-                  <input id="first_name" type="text" class="validate">
+                  <input value="914106840523" id="first_name" type="text" class="validate" disabled="disabled">
                   <label for="StuId">学号</label>
                 </div>
                 <div class="input-field">
-                  <input id="first_name" type="text" class="validate">
+                  <input value="45653452454445"id="first_name" type="text" class="validate" disabled="disable">
                   <label for="SigId">身份证号</label>
                 </div>
                 <!-- 性别 -->
@@ -193,7 +194,7 @@
                   <label for="first_name">年级</label>
                 </div>
                 <div class="input-field">
-                  <input type="date" class="datepicker">
+                  <input type="date" class="datepicker" disabled="disable">
                   <label for="first_name">出生日期</label>
                 </div>
                 <div class="input-field">
@@ -211,7 +212,9 @@
                   <label for="first_name">民族</label>
                 </div>
               </div>
-
+              <div style="position:absolute;bottom:30px;right:30px;">
+                  <a class="waves-effect waves-light btn green white-text" style="width:100px;height:60px;"><input type="submit" value="提交" style="width:100%;height:100%"></a>
+              </div>
             </div>
           </div>
 
@@ -229,14 +232,14 @@
     <script src="js/materialize.min.js"></script>
 
     <script>
-    $(document).ready(function(){
-      $( 'div.tabs' ).tabs();
-      $('select').material_select();
-    });
-    $('.datepicker').pickadate({
-        selectMonths: true, // Creates a dropdown to control month
-        selectYears: 60 // Creates a dropdown of 15 years to control year
+      $(document).ready(function(){
+        $( 'div.tabs' ).tabs();
+        $('select').material_select();
       });
+      $('.datepicker').pickadate({
+          selectMonths: true, // Creates a dropdown to control month
+          selectYears: 60 // Creates a dropdown of 15 years to control year
+        });
     </script>
 
     <script>
